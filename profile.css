@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'tahoma';
+    box-sizing: border-box;
+}
+body {
+    height:100vh;
+    background: url(./images/Background.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-card {
+width: 400px;
+text-align: center;
+border-radius: 8px;
+overflow: hidden;
+}
+
+.card-header {
+    background-color: rgb(126, 0, 0);
+    padding: 60px 40px;
+}
+
+.pic {
+    display: inline-block;
+    padding: 8px;
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+}
+
+@keyframes animated-gradient {
+    25% {
+        background-position: left bottom;
+    }
+    50% {
+        background-position: right bottom;
+    }
+    75% {
+        background-position: right top;
+    }
+    200% {
+        background-position: left top;
+    }
+
+}
+.pic img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.name {
+    margin: 10px;
+    color: white;
+    font-size: 30px
+}
+
+.desc {
+    font-size: 20px;
+    color: cyan;
+    font-style: bold;
+    text-transform: uppercase;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.sm a{
+    color: white;
+    width: 56px;
+    font-size: 22px;
+    transition: .3s linear;
+}
+
+a:hover{
+    color: teal;
+    font-size: 25px;
+}
+
+.contact-btn{
+    display: inline-block;
+    padding: 12px 50px;
+    border: 2px solid cyan;
+    border-radius: 6xpx;
+    margin-top: 16px;
+    transition: .3s linear;
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact-btn{
+    background: rgb(192, 221, 255);
+    color: rgb(47, 79, 60);
+    font-size: opx;
+}
+
+.card-footer {
+    padding: 40px 60px;
+    background: cyan
+}
+
+.numbers {
+    display: flex;
+    padding: 7px;
+    align-items: center;
+}
+
+.items {
+    flex: 1;
+    text-transform: uppercase;
+    font-size: 13px;
+
+}
+
+.item span {
+    display: inline-block;
+    color: blue;
+    font-size: 30px;
+}
